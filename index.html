@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scritp.js" defer></script>
+    <title>TP - API REST</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Explorador de API Rick and Morty</h1>
+        <div class="controls">
+            <div class="button-section">
+                <button class="btn-get-all" id="getAllBtn">Obtener Todos los Personajes</button>
+            </div>
+            <h3 style="margin-bottom: 15px; color: #333;">Filtros de Búsqueda</h3>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="nameFilter">Nombre:</label>
+                    <input type="text" id="nameFilter" placeholder="Ej: Rick">
+                </div>
+                <div class="filter-group">
+                    <label for="statusFilter">Estado:</label>
+                    <input type="text" id="statusFilter" placeholder="alive, dead, unknown">
+                </div>
+                <div class="filter-group">
+                    <label for="speciesFilter">Especie:</label>
+                    <input type="text" id="speciesFilter" placeholder="Ej: Human">
+                </div>
+                <div class="filter-group">
+                    <label for="typeFilter">Tipo:</label>
+                    <input type="text" id="typeFilter" placeholder="Ej: Genetic experiment">
+                </div>
+                <div class="filter-group">
+                    <label for="genderFilter">Género:</label>
+                    <input type="text" id="genderFilter" placeholder="female, male, genderless, unknown">
+                </div>
+            </div>
+            <div class="filter-button-container">
+                <button class="btn-filter" id="filterBtn">Buscar con Filtros</button>
+            </div>
+        </div>
+        <div class="error-message" id="errorMessage"></div>
+        <div class="success-message" id="successMessage"></div>
+        <div class="loading" id="loading"></div>
+        <div class="results-count" id="resultsCount"></div>
+        <div class="characters-grid" id="charactersGrid"></div>
+    </div>
+</body>
+</html>
