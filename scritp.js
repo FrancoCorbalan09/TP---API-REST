@@ -58,8 +58,7 @@ function translateGender(gender) {
     return translations[gender.toLowerCase()] || gender;
 }
 function createCharacterCard(character) {
-    return `
-        <div class="character-card">
+    return `<div class="character-card">
             <img src="${character.image}" alt="${character.name}">
             <div class="character-info">
                 <div class="character-name">${character.name}</div>
@@ -71,8 +70,7 @@ function createCharacterCard(character) {
                     <span class="status-badge ${getStatusClass(character.status)}">${translateStatus(character.status)}</span>
                 </div>
             </div>
-        </div>
-    `;
+        </div>`;
 }
 function displayCharacters(characters) {
     if (!characters || characters.length === 0) {
